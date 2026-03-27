@@ -197,7 +197,7 @@ with col2:
     uploaded_req = st.file_uploader("『分野履修基準』PDF", type="pdf", help="追加でアップロードすると、必要な科目だけを抽出した「クロスチェック版」になります。")
     
     # 👇 アップロード枠のすぐ下にボタンを配置！
-    st.link_button("🌐 分野履修基準のダウンロードはこちら", "https://www.hokkyodai.ac.jp/...")
+    st.link_button("🌐 分野履修基準のダウンロードはこちら", "https://www.hokkyodai.ac.jp/sap/major/process-subject/completion.html")
 
 st.markdown("---")
 

@@ -192,14 +192,6 @@ with col2:
     uploaded_req = st.file_uploader("『分野履修基準』PDF", type="pdf", help="追加でアップロードすると、必要な科目だけを抽出した「クロスチェック版」になります。")
 
 st.markdown("---")
-with col2:
-    st.subheader("2. 任意ファイル（絞り込み）")
-    uploaded_req = st.file_uploader("『分野履修基準』PDF", type="pdf", help="追加でアップロードすると、必要な科目だけを抽出した「クロスチェック版」になります。")
-    
-    # 👇 アップロード枠のすぐ下にボタンを配置！
-    st.link_button("🌐 分野履修基準のダウンロードはこちら", "https://www.hokkyodai.ac.jp/sap/major/process-subject/completion.html")
-
-st.markdown("---")
 
 if 'excel_data' not in st.session_state:
     st.session_state.excel_data = None

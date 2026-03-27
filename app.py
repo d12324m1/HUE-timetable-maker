@@ -175,7 +175,7 @@ def generate_excel_bytes(df):
 # ==========================================
 # 🖥️ 3. Webアプリ UI（自動分岐搭載！）
 # ==========================================
-st.set_page_config(page_title="履修パズルメーカー", layout="centered")
+st.set_page_config(page_title="北教大時間割メーカー", layout="centered")
 
 st.title("北海道教育大学　時間割メーカー")
 st.markdown("PDFをアップロードして、単位自動計算付きの**自分専用Excel時間割**を作成します。")

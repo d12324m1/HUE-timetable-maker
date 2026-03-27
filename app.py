@@ -193,10 +193,6 @@ with col2:
     # 👇 アップロード枠のすぐ下にボタンを配置！
     st.link_button("🌐 分野履修基準のダウンロードはこちら", "https://www.hokkyodai.ac.jp/sap/major/process-subject/completion.html")
 
-st.markdown("---")
-
-
-
 if 'excel_data' not in st.session_state:
     st.session_state.excel_data = None
     st.session_state.current_mode = None

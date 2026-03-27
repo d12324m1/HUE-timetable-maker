@@ -180,7 +180,7 @@ st.set_page_config(page_title="履修パズルメーカー", layout="centered")
 st.title("北海道教育大学　時間割メーカー")
 st.markdown("PDFをアップロードして、単位自動計算付きの**自分専用Excel時間割**を作成します。")
 st.markdown("---")
-st.warning("⚠️ **注意事項**\n仕様上、クロスチェック版には「一般教養科目」が含まれません。まずは専門科目を配置し、空きコマは「全科目カタログ版」を見ながら埋めるのがおすすめです！")
+st.warning("⚠️ **注意事項**\n仕様上、クロスチェック版には「一般教養科目」が含まれません。クロスチェック版を使う場合は、学生便覧に載っている教養科目を忘れないように注意してください。")
 
 col1, col2 = st.columns(2)
 with col1:
@@ -189,7 +189,7 @@ with col1:
 
 with col2:
     st.subheader("2. 任意ファイル（絞り込み）")
-    uploaded_req = st.file_uploader("『専攻履修基準』PDF", type="pdf", help="追加でアップロードすると、必要な科目だけを抽出した「クロスチェック版」になります。")
+    uploaded_req = st.file_uploader("『分野履修基準』PDF", type="pdf", help="追加でアップロードすると、必要な科目だけを抽出した「クロスチェック版」になります。")
 
 st.markdown("---")
 

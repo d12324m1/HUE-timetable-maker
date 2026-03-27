@@ -195,6 +195,14 @@ with col2:
 
 st.markdown("---")
 
+st.subheader("💡 このツールの仕組みとお願い")
+
+# st.info() を使うと、青いお洒落な枠で囲まれて表示されます
+st.info("このシステムは、PDFの特定のページにある、特定の表データを自動で読み取ってExcelを生成しています。**学生課が開設科目一覧のPDFフォーマット（表の形や掲載ページなど）を大幅に変更するという余計なことをしない限り**、来年以降の最新版PDFでもそのまま使い続けることができます。クールでしょ？")
+
+st.markdown("📩 **不具合報告・ご意見**")
+st.markdown("もし「エラーが出た」「ここが使いにくい」などのバグがありましたら、以下のメールアドレスまでそっと教えてもらえると嬉しいです。\n👉 `d12324m1@stu.hokkyodai.ac.jp`")
+
 if 'excel_data' not in st.session_state:
     st.session_state.excel_data = None
     st.session_state.current_mode = None

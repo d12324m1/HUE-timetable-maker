@@ -177,9 +177,10 @@ def generate_excel_bytes(df):
 # ==========================================
 st.set_page_config(page_title="履修パズルメーカー", layout="centered")
 
-st.title("🧩 履修パズルメーカー")
+st.title("北海道教育大学　時間割メーカー")
 st.markdown("PDFをアップロードして、単位自動計算付きの**自分専用Excel時間割**を作成します。")
 st.markdown("---")
+st.warning("⚠️ **注意事項**\n仕様上、クロスチェック版には「一般教養科目」が含まれません。まずは専門科目を配置し、空きコマは「全科目カタログ版」を見ながら埋めるのがおすすめです！")
 
 col1, col2 = st.columns(2)
 with col1:
